@@ -1,0 +1,183 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* верхняя часть страницы */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;  
+}
+
+/*кнопка*/
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffffff; 
+  text-decoration:none;
+}
+
+/*картинка-1*/
+#showcase{
+  min-height:400px;
+  background:url('../img/showcase.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+}
+/*картинка-2*/
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+/*картинка-3*/
+#showcase p{
+  font-size:20px;
+}
+/*картинка-4*/
+#showcase h1{
+  margin-top:40px;
+}
+
+/*размер кнопки*/
+#newsletter button{
+    display:block;
+    width:10%;
+  }
+/*серый блок*/
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a;
+}
+#newsletter_black{
+  padding:80px;
+  color:#ffffff;
+  background:black;
+}
+
+/*размер строки*/
+.form_input{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+/*расположение формы*/
+.form_op{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+}
+
+
+
+
+/*криптовалюта*/
+.cc-bar {
+    margin-top: 12px;
+    margin-bottom: 30px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eae9ee;
+}
+.cc-bar ul {
+    list-style: none outside none;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+.cc-bar ul li {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border-right: 1px solid #eae9ee;
+    line-height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+}
+.cc-bar ul li a {
+    font-size: 20px;
+}
+.cc-bar ul li:last-child {
+    border-right: none;
+}
+.cc-bar ul li p {
+    margin: 0px;
+}
+.triangle {
+    opacity: 0;
+    margin-right: 2px;
+    border-style: solid;
+    display: inline-block;
+    border-width: 5px;
+}
+.triangle_up,
+.triangle_down,
+.triangle_up_big,
+.triangle_down_big {
+    opacity: 1;
+    border-style: solid;
+    display: inline-block;
+}
+.triangle_up {
+    border-width: 0 5px 6px 5px;
+    border-color: transparent transparent #4ac069 transparent;
+}
+.triangle_down {
+    border-width: 6px 5px 0 5px;
+    border-color: #f48073 transparent transparent transparent;
+}
+.triangle_big {
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+}
+.ticker_usd {
+    font-weight: 700;
+    font-size: 14px;
+}
+.ticker_name {
+    font-weight: 600;
+    font-size: 14px;
+    max-width: 75px;
+}
+.ticker_pic_10,
+.ticker_pic_20 {
+    width: 38px;
+    margin-right: 10px;
+}
+.ticker_pic_10 {
+    margin-left: 10px;
+}
+.ticker_pic_20 {
+    margin-left: 20px;
+}
+.ticker_v_line {
+    padding-right: 20px;
+    border-right: 1px solid #eae9ee;
+}
+.up {
+    color: #4ac06a;
+}
+.down {
+    color: #f48073;
+}
